@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+
+header {
+    background-color: #353535;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px ;
+}
+
+
+.logo {
+    text-decoration: none;
+    color:#E10162; 
+    text-transform: uppercase;   
+    font-weight: 700 ;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    color :azure ; 
+    text-decoration: none ;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #E10162; 
+}
+
+section {
+    padding : 100px  200px ; 
+} 
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /*background: url(images/background.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;*/
+}
+
+
+.main h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+/*body{
+    background-color: #787878;
+}*/
+
+
+.main h2 span {
+   /* display: inline-block;
+    margin-top: 10px;
+    background: -webkit-linear-gradient(#E10162, #72A2EA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8em;
+    font-weight: 800; */
+    text-transform: uppercase;
+    background-image: linear-gradient(
+    -225deg,
+    azure 0%,
+    #E10162 29%,
+    #353535 67%,
+     #72A2EA 100%
+  );
+  margin-top: 10px;
+  font-size: 1.8em;
+  font-weight: 800;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+.main h3 {
+    color: #353535;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+.main-button {
+    color : azure; 
+    background-color: #353535;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.5em 2em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 1s ease;
+}
+.main-button:hover {
+    background-color: #E10162;
+    transform: scale( 1.1 );
+}
+
+.socialmedia a {
+    color: #353535;
+    font-size: 1.7em;
+    padding-right: 15px;
+}
+
+.title {
+    display: flex; /* bloc element */ 
+    justify-content: center ; /*horizontal*/ 
+    color: #E10162;
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap:nowrap; 
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #E10162;
+    font-size: 5em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color: #E10162;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: 10px;
+}
